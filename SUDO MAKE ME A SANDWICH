@@ -1,0 +1,14 @@
+IN THIS QUESTION YOU HAVE TO USE THE POWERS OF SUDO command
+after porting use ls -la 
+it show up some files at end of the files you see flag.txt file 
+you can see on the left hand of that file all permission are denied (-r--r-----)
+but we can force it for run by using sudo 
+we use sudo -l 
+to see for how many tools we have permission
+/bin/emacs --- only these are given permission to use 
+so we use sudo emacs flag.txt 
+emacs it is just like nano 
+Why Emacs is perfect here:
+Emacs has a built-in feature that lets you launch a command terminal inside the editor.
+Because Emacs is running as root (the administrator), the terminal it opens inherits those root powers.
+This allows you to break out of the restriction entirely and read whatever you want
